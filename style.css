@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.main{
+    max-width: 1620px;
+    margin: auto;
+    /* border: 1px solid white; */
+}
+
+.main h1{
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 80px;
+}
+
+.searchmenu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.searchmenu p{
+    width: 12%;
+    font-size: 30px;
+}
+
+.searchmenu input{
+    height: 50px;
+    width: 87%;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px 0px #4a209e;
+    display: grid;
+    grid-template-columns: 100% 4;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+
+.moviemain{
+    width: 100%;
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 20px;
+}
+
+.moviemain img{
+    width: 100%;
+}
+
+.heading{
+    background-color: yellow;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0px;
+    font-size: 20px;
+}
+.heading h4{
+    font-weight: normal;
+}
+
+.movieitems span{
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    display: block;
+    color: red;
+    padding: 10px 0px ;
+}
+.movieitems{
+position: relative;
+}
+
+.overlaye{
+    position: absolute;
+    width: 90%;
+    height: 88%;
+    top: 0px;
+    background-color: rgb(210, 191, 191);
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 0px 20px;
+    opacity: 0;
+}
+
+.movieitems:hover .overlaye{
+    opacity: 1;
+    transition: 0.5s;
+}
