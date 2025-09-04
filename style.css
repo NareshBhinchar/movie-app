@@ -29,8 +29,9 @@ body{
 }
 
 .searchmenu p{
-    width: 12%;
+    max-width: 12%;
     font-size: 30px;
+    border: 1px solide red;
 }
 
 .searchmenu input{
@@ -82,8 +83,8 @@ position: relative;
 
 .overlaye{
     position: absolute;
-    width: 90%;
-    height: 88%;
+    max-width: 90%;
+   height: 100%;
     top: 0px;
     background-color: rgb(210, 191, 191);
     display: flex;
